@@ -1,4 +1,5 @@
 import { ContactForm } from "@/components/contact-form";
+import { RecentProjects } from "@/components/project-panels";
 import { serviceCategories } from "@/content/service-framework";
 import { ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
@@ -325,6 +326,8 @@ export default function Home() {
           </p>
         </div>
       </section>
+
+      <RecentProjects />
 
       <section className="border-b border-outline-variant bg-background px-6 py-20 md:px-16 md:py-24">
         <div className="mx-auto flex w-full max-w-7xl flex-col items-start gap-12 md:flex-row md:items-center md:gap-16">
