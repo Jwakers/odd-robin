@@ -93,8 +93,8 @@ export function RecentProjects() {
             Selected work, built with care.
           </h2>
           <p className="max-w-2xl text-lg leading-[30px] text-outline">
-            Selected websites, my own product and focused improvements to
-            existing sites.
+            Selected websites, my own product, a Framer template and focused
+            improvements to existing sites.
           </p>
         </div>
         <ProjectPanels />

@@ -116,7 +116,7 @@ export default function MikeHamerPage() {
           </figure>
         </div>
       </section>
-      <ProjectNavigation />
+      <ProjectNavigation next={{ href: "/projects/aster-hall", name: "Aster Hall" }} />
     </main>
   );
 }

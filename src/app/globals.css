@@ -65,6 +65,13 @@ body {
   --project-label: #3d5c3a;
 }
 
+.project-theme-aster {
+  --project-surface: #e8e5de;
+  --project-ink: #202421;
+  --project-muted: #596260;
+  --project-label: #69566e;
+}
+
 .project-theme-vault {
   --project-surface: #111111;
   --project-ink: #fafaf7;

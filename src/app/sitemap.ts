@@ -41,6 +41,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: "https://oddrobin.co.uk/projects/aster-hall",
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
       url: "https://oddrobin.co.uk/contact",
       lastModified,
       changeFrequency: "monthly",

@@ -7,12 +7,42 @@ export type Project = {
   tags: readonly string[];
   image: string;
   imageAlt: string;
-  theme: "foodedo" | "gardens" | "vault";
+  theme: "foodedo" | "gardens" | "aster" | "vault";
   href?: string;
   cta: string;
 };
 
 export const projects: readonly Project[] = [
+  {
+    id: "aster-hall",
+    name: "Aster Hall",
+    category: "Framer template · Wedding venue",
+    description:
+      "A complete wedding venue Framer template, designed and built by me. Aster Hall is a fictional venue, with spaces, stays and wedding details brought together around an invitation to enquire.",
+    mobileDescription:
+      "A wedding venue Framer template, designed and built by me for a fictional venue.",
+    tags: ["Website design", "Framer build"],
+    image: "/projects/aster-hall-home.webp",
+    imageAlt:
+      "Aster Hall template homepage with a country house, meadow and the headline A place to make entirely your own",
+    theme: "aster",
+    href: "/projects/aster-hall",
+    cta: "View project",
+  },
+  {
+    id: "mike-hamer-gardens",
+    name: "Mike Hamer Gardens",
+    category: "Client website · Landscaping",
+    description:
+      "A website for a Stroud landscaping business, bringing clear services, real project photography and a direct enquiry route together.",
+    tags: ["Website design", "Development"],
+    image: "/projects/mike-hamer-home.webp",
+    imageAlt:
+      "Mike Hamer Gardens homepage showing landscaping services in Stroud and completed garden work",
+    theme: "gardens",
+    href: "/projects/mike-hamer-gardens",
+    cta: "View project",
+  },
   {
     id: "foodedo",
     name: "Foodedo",
@@ -28,20 +58,6 @@ export const projects: readonly Project[] = [
     theme: "foodedo",
     href: "/projects/foodedo",
     cta: "Read the case study",
-  },
-  {
-    id: "mike-hamer-gardens",
-    name: "Mike Hamer Gardens",
-    category: "Client website · Landscaping",
-    description:
-      "A website for a Stroud landscaping business, bringing clear services, real project photography and a direct enquiry route together.",
-    tags: ["Website design", "Development"],
-    image: "/projects/mike-hamer-home.webp",
-    imageAlt:
-      "Mike Hamer Gardens homepage showing landscaping services in Stroud and completed garden work",
-    theme: "gardens",
-    href: "/projects/mike-hamer-gardens",
-    cta: "View project",
   },
   {
     id: "the-vault-gym",

@@ -2,7 +2,7 @@ import { ProjectPanels } from "@/components/project-panels";
 import type { Metadata } from "next";
 
 const description =
-  "Selected websites, product design and focused improvements to existing sites by Odd Robin, including Foodedo and Mike Hamer Gardens.";
+  "Selected websites, product design and Framer templates by Odd Robin, including Foodedo, Mike Hamer Gardens and the Aster Hall wedding venue template.";
 export const metadata: Metadata = {
   title: "Projects",
   description,
@@ -25,8 +25,8 @@ export default function ProjectsPage() {
             Selected work.
           </h1>
           <p className="max-w-2xl text-lg leading-[30px] text-outline">
-            A selection of websites, my own product and focused improvements to
-            existing sites.
+            A selection of websites, my own product, a Framer template and focused
+            improvements to existing sites.
           </p>
         </div>
       </section>
