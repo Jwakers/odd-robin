@@ -7,9 +7,9 @@ import profileImage from "../../../public/profile-image.png";
 export const metadata: Metadata = {
   title: "Who Am I?",
   description:
-    "A personal introduction to the local digital partner behind Penumbra Digital, with values, approach, and support for one-off projects or ongoing work.",
+    "A personal introduction to the local digital partner behind Odd Robin, with values, approach, and support for one-off projects or ongoing work.",
   keywords: [
-    "about Penumbra Digital",
+    "about Odd Robin",
     "gloucester digital consultant",
     "local web partner gloucester",
   ],
@@ -18,12 +18,12 @@ export const metadata: Metadata = {
   },
   openGraph: {
     url: "/who-am-i",
-    title: "Meet the Person Behind Penumbra Digital",
+    title: "Meet the Person Behind Odd Robin",
     description:
       "A personal introduction to your local Gloucester digital partner, approach, and support for one-off projects or ongoing work.",
   },
   twitter: {
-    title: "Meet the Person Behind Penumbra Digital",
+    title: "Meet the Person Behind Odd Robin",
     description:
       "A personal introduction to your local Gloucester digital partner, approach, and support for one-off projects or ongoing work.",
   },
@@ -38,7 +38,7 @@ const sections = [
   {
     title: "Why I started this",
     prompt:
-      "I started Penumbra Digital to bring that experience back home to Gloucester. I wanted to focus on helping local small businesses who are great at what they do but often do not have the time to untangle websites, systems, updates, and digital tools on top of running day-to-day operations.",
+      "I started Odd Robin to bring that experience back home to Gloucester. I wanted to focus on helping local small businesses who are great at what they do but often do not have the time to untangle websites, systems, updates, and digital tools on top of running day-to-day operations.",
   },
   {
     title: "How I work with clients",
@@ -86,7 +86,7 @@ export default function WhoAmIPage() {
               </h1>
               <p className="text-lg text-foreground/80 leading-relaxed mb-4">
                 I&apos;m a Gloucester-based developer with around 10 years in
-                the digital industry, and I built Penumbra Digital to help local
+                the digital industry, and I built Odd Robin to help local
                 small businesses get practical, honest support with their
                 websites and systems. My focus is simple: remove digital stress,
                 cut unnecessary busy work, and give business owners more time to
@@ -103,7 +103,7 @@ export default function WhoAmIPage() {
                 <div className="border border-outline-variant bg-background">
                   <Image
                     src={profileImage}
-                    alt="Jack Wakeham, founder of Penumbra Digital"
+                    alt="Jack Wakeham, founder of Odd Robin"
                     className="block w-full h-auto"
                   />
                 </div>

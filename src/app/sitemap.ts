@@ -5,43 +5,43 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
-      url: "https://penumbradigital",
+      url: "https://oddrobin.co.uk",
       lastModified,
       changeFrequency: "weekly",
       priority: 1,
     },
     {
-      url: "https://penumbradigital/services",
+      url: "https://oddrobin.co.uk/services",
       lastModified,
       changeFrequency: "weekly",
       priority: 0.8,
     },
     {
-      url: "https://penumbradigital/who-am-i",
+      url: "https://oddrobin.co.uk/who-am-i",
       lastModified,
       changeFrequency: "monthly",
       priority: 0.6,
     },
     {
-      url: "https://penumbradigital/projects",
+      url: "https://oddrobin.co.uk/projects",
       lastModified,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: "https://penumbradigital/projects/foodedo",
+      url: "https://oddrobin.co.uk/projects/foodedo",
       lastModified,
       changeFrequency: "monthly",
       priority: 0.7,
     },
     {
-      url: "https://penumbradigital/projects/mike-hamer-gardens",
+      url: "https://oddrobin.co.uk/projects/mike-hamer-gardens",
       lastModified,
       changeFrequency: "monthly",
       priority: 0.7,
     },
     {
-      url: "https://penumbradigital/contact",
+      url: "https://oddrobin.co.uk/contact",
       lastModified,
       changeFrequency: "monthly",
       priority: 0.7,

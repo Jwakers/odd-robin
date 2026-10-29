@@ -8,7 +8,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "https://penumbradigital/sitemap.xml",
-    host: "https://penumbradigital",
+    sitemap: "https://oddrobin.co.uk/sitemap.xml",
+    host: "https://oddrobin.co.uk",
   };
 }

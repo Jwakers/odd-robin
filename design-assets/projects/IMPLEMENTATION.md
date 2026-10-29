@@ -13,4 +13,4 @@ Production assets live in `public/projects/` as WebP files. The Mike homepage as
 
 Validation: ESLint, Next.js production build (including TypeScript), route/metadata/sitemap/image smoke checks, and a right-edge pixel check passed. All three new routes were checked at viewport widths 320, 640, 768, 1024 and 1440 with no horizontal overflow. Mobile navigation and project links were exercised. Desktop and mobile production previews are saved alongside this document.
 
-The existing canonical domain setting (`https://penumbradigital`) was retained because the site is not public yet and the production domain has not been selected. Configure the real origin before publishing. No deployment was performed.
+The site was rebranded to Odd Robin on 29 October 2026. The production origin is now `https://oddrobin.co.uk` across metadata, structured data, robots and sitemap entries. No deployment was performed.

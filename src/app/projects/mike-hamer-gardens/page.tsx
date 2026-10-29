@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   description,
   alternates: { canonical: "/projects/mike-hamer-gardens" },
   openGraph: {
-    title: "Mike Hamer Gardens | Penumbra Digital",
+    title: "Mike Hamer Gardens | Odd Robin",
     description,
     url: "/projects/mike-hamer-gardens",
     images: [
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    title: "Mike Hamer Gardens | Penumbra Digital",
+    title: "Mike Hamer Gardens | Odd Robin",
     description,
     images: ["/projects/mike-hamer-home.webp"],
   },

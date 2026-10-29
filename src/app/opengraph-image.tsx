@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const alt =
-  "Penumbra Digital - local digital support for Gloucester small businesses";
+  "Odd Robin - local digital support for Gloucester small businesses";
 export const size = {
   width: 1200,
   height: 630,
@@ -52,7 +52,7 @@ export default function Image() {
           >
             {"</>"}
           </div>
-          Penumbra Digital
+          Odd Robin
         </div>
 
         <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
@@ -112,7 +112,7 @@ export default function Image() {
               fontWeight: 600,
             }}
           >
-            penumbradigital
+            oddrobin.co.uk
           </div>
         </div>
       </div>

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description,
   alternates: { canonical: "/projects/foodedo" },
   openGraph: {
-    title: "Foodedo | Penumbra Digital",
+    title: "Foodedo | Odd Robin",
     description,
     url: "/projects/foodedo",
     images: [
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    title: "Foodedo | Penumbra Digital",
+    title: "Foodedo | Odd Robin",
     description,
     images: ["/projects/foodedo-dashboard.webp"],
   },

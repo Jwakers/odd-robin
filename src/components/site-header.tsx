@@ -51,7 +51,7 @@ export function SiteHeader({ currentPage = "home" }: SiteHeaderProps) {
         >
           <Code2 className="size-5 text-primary" aria-hidden="true" />
           <span className="text-base font-semibold tracking-tight sm:text-lg">
-            Penumbra Digital
+            Odd Robin
           </span>
         </Link>
         <div className="hidden items-center gap-7 md:flex">

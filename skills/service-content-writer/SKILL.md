@@ -1,10 +1,10 @@
 ---
 name: service-content-writer
-description: Write clear, trust-focused website and proposal content for Penumbra Digital services. Use when creating or updating service copy, pricing language, FAQs, or value propositions.
+description: Write clear, trust-focused website and proposal content for Odd Robin services. Use when creating or updating service copy, pricing language, FAQs, or value propositions.
 license: Complete terms in LICENSE.txt
 ---
 
-This skill ensures service messaging stays consistent with Penumbra Digital positioning:
+This skill ensures service messaging stays consistent with Odd Robin positioning:
 
 - Local-first (Gloucester)
 - Small-business-only focus

@@ -14,30 +14,30 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://penumbradigital"),
+  metadataBase: new URL("https://oddrobin.co.uk"),
   title: {
-    default: "Penumbra Digital | Get Seen in Gloucester",
-    template: "%s | Penumbra Digital",
+    default: "Odd Robin | Get Seen in Gloucester",
+    template: "%s | Odd Robin",
   },
   description:
     "Bold websites, local visibility, and practical digital support for Gloucester small businesses.",
   alternates: {
     canonical: "/",
   },
-  applicationName: "Penumbra Digital",
+  applicationName: "Odd Robin",
   category: "business",
   openGraph: {
     type: "website",
-    url: "https://penumbradigital",
-    siteName: "Penumbra Digital",
-    title: "Penumbra Digital | Get Seen in Gloucester",
+    url: "https://oddrobin.co.uk",
+    siteName: "Odd Robin",
+    title: "Odd Robin | Get Seen in Gloucester",
     description:
       "Bold websites, local visibility, and practical digital support for Gloucester small businesses.",
     locale: "en_GB",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Penumbra Digital | Get Seen in Gloucester",
+    title: "Odd Robin | Get Seen in Gloucester",
     description:
       "Bold websites, local visibility, and practical digital support for Gloucester small businesses.",
   },
@@ -68,7 +68,7 @@ export default function RootLayout({
         <SiteHeader />
         {children}
         <footer className="border-t border-outline-variant py-8 text-center text-xs font-mono text-outline uppercase tracking-widest bg-background">
-          &copy; {new Date().getFullYear()} Penumbra Digital · Bold digital
+          &copy; {new Date().getFullYear()} Odd Robin · Bold digital
           support for Gloucester small businesses.
         </footer>
       </body>

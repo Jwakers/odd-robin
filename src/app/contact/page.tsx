@@ -5,9 +5,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Book a chat with Penumbra Digital. Send a quick message for practical next steps for your Gloucester small business.",
+    "Book a chat with Odd Robin. Send a quick message for practical next steps for your Gloucester small business.",
   keywords: [
-    "contact penumbra digital",
+    "contact odd robin",
     "gloucester web design enquiry",
     "book a chat gloucester",
   ],
@@ -16,14 +16,14 @@ export const metadata: Metadata = {
   },
   openGraph: {
     url: "/contact",
-    title: "Contact Penumbra Digital",
+    title: "Contact Odd Robin",
     description:
-      "Book a chat with Penumbra Digital. Send a quick message for practical next steps for your Gloucester small business.",
+      "Book a chat with Odd Robin. Send a quick message for practical next steps for your Gloucester small business.",
   },
   twitter: {
-    title: "Contact Penumbra Digital",
+    title: "Contact Odd Robin",
     description:
-      "Book a chat with Penumbra Digital. Send a quick message for practical next steps for your Gloucester small business.",
+      "Book a chat with Odd Robin. Send a quick message for practical next steps for your Gloucester small business.",
   },
 };
 

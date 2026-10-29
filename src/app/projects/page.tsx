@@ -2,17 +2,17 @@ import { ProjectPanels } from "@/components/project-panels";
 import type { Metadata } from "next";
 
 const description =
-  "Selected websites, product design and focused improvements to existing sites by Penumbra Digital, including Foodedo and Mike Hamer Gardens.";
+  "Selected websites, product design and focused improvements to existing sites by Odd Robin, including Foodedo and Mike Hamer Gardens.";
 export const metadata: Metadata = {
   title: "Projects",
   description,
   alternates: { canonical: "/projects" },
   openGraph: {
-    title: "Selected work | Penumbra Digital",
+    title: "Selected work | Odd Robin",
     description,
     url: "/projects",
   },
-  twitter: { title: "Selected work | Penumbra Digital", description },
+  twitter: { title: "Selected work | Odd Robin", description },
 };
 
 export default function ProjectsPage() {

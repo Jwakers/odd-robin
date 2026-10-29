@@ -22,12 +22,12 @@ export const metadata: Metadata = {
   },
   openGraph: {
     url: "/",
-    title: "Penumbra Digital | Get Seen in Gloucester",
+    title: "Odd Robin | Get Seen in Gloucester",
     description:
       "Local digital support for Gloucester small businesses: websites, visibility improvements, and practical help for one-off projects or ongoing support.",
   },
   twitter: {
-    title: "Penumbra Digital | Get Seen in Gloucester",
+    title: "Odd Robin | Get Seen in Gloucester",
     description:
       "Local digital support for Gloucester small businesses: websites, visibility improvements, and practical help for one-off projects or ongoing support.",
   },
@@ -102,8 +102,8 @@ const audienceLine =
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  name: "Penumbra Digital",
-  url: "https://penumbradigital",
+  name: "Odd Robin",
+  url: "https://oddrobin.co.uk",
   email: "jackwakeham82@gmail.com",
   areaServed: {
     "@type": "City",
@@ -138,7 +138,7 @@ export default function Home() {
             Gloucester · Small business focus
           </p>
           <h1 className="max-w-4xl text-4xl font-extrabold tracking-tight text-primary-fixed md:text-6xl lg:text-[72px] lg:leading-[78px] lg:tracking-[-0.04em]">
-            Penumbra Digital
+            Odd Robin
           </h1>
           <p className="max-w-2xl text-xl font-medium tracking-tight text-foreground md:text-2xl md:leading-[34px]">
             Your local digital partner for small businesses in Gloucester.
@@ -336,7 +336,7 @@ export default function Home() {
               Who am I?
             </p>
             <h2 className="text-3xl font-extrabold tracking-tight text-foreground md:text-4xl md:leading-[48px] md:tracking-[-0.03em]">
-              Meet the person behind Penumbra Digital.
+              Meet the person behind Odd Robin.
             </h2>
             <p className="max-w-xl text-[17px] leading-7 text-outline">
               Learn more about my background, how I work with local businesses,
@@ -353,7 +353,7 @@ export default function Home() {
           <div className="aspect-square w-full max-w-[360px] shrink-0 overflow-hidden border border-outline-variant bg-surface">
             <Image
               src={profileImage}
-              alt="Jack Wakeham, founder of Penumbra Digital"
+              alt="Jack Wakeham, founder of Odd Robin"
               className="size-full object-cover"
             />
           </div>

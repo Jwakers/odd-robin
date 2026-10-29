@@ -10,7 +10,7 @@ The existing type, spacing system and overall visual identity are sound. The pro
 
 - Use the same panel structure for all three projects on the homepage and project listing: preview image, category label, title, descriptive copy, contribution tags and CTA/status area.
 - Desktop panels share the same image dimensions, copy padding, hierarchy and height. Mobile panels stack image and copy using the same shared hierarchy.
-- Foodedo uses Penumbra's neutral surface and blue accents; Mike uses cream/green; The Vault uses charcoal/yellow.
+- Foodedo uses Odd Robin's neutral surface and blue accents; Mike uses cream/green; The Vault uses charcoal/yellow.
 - The Vault has a full visual panel again, with accurate selected-key-page rework copy and `Page rework` / `Existing website` tags. Its final line reads `More project details coming soon` as plain text, without an arrow or project link. Do not create a Vault detail route for launch.
 - Mike's standalone project page remains unchanged: concise contribution summary and two website screenshots.
 - Repositioned lower canvas frames after the homepage became taller, maintaining separate desktop/mobile groups and the archived Vault exploration.
@@ -28,7 +28,7 @@ The existing type, spacing system and overall visual identity are sound. The pro
 ## Problems addressed in Paper
 
 - Foodedo screenshots represented the previous interface and appeared repeatedly, including as supposed shopping evidence. Replaced them with distinct live dashboard, generated-week, recipe-library and planning-setup captures.
-- Green Foodedo washes and low-contrast green labels no longer matched the live product. The portfolio now uses Penumbra's existing neutral surfaces and blue labels around the real product screenshots.
+- Green Foodedo washes and low-contrast green labels no longer matched the live product. The portfolio now uses Odd Robin's existing neutral surfaces and blue labels around the real product screenshots.
 - Corrected the broken homepage headline and replaced beta language with the relaunched status.
 - Replaced unsupported leftover-first, seven-day-only and speed claims with the current days / servings / suggested-meals flow.
 - Separated Foodedo's personal-product status from client website work and made the design/build contribution explicit.
