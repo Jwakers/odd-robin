@@ -138,7 +138,7 @@ export default function Home() {
             Gloucester · Small business focus
           </p>
           <h1 className="max-w-4xl text-4xl font-extrabold tracking-tight text-primary-fixed md:text-6xl lg:text-[72px] lg:leading-[78px] lg:tracking-[-0.04em]">
-            Odd Robin
+            Odd Robin Digital
           </h1>
           <p className="max-w-2xl text-xl font-medium tracking-tight text-foreground md:text-2xl md:leading-[34px]">
             Your local digital partner for small businesses in Gloucester.
