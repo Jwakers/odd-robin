@@ -125,13 +125,17 @@ export default function Home() {
 
       <section className="relative overflow-hidden border-b border-outline-variant bg-background px-6 py-20 md:min-h-[720px] md:px-16 md:py-28">
         <div
-          className="pointer-events-none absolute -right-20 top-10 size-[620px] rounded-full bg-[rgba(11,78,219,0.07)]"
+          className="pointer-events-none absolute -right-44 -bottom-20 size-[440px] opacity-[0.06] md:-right-36 md:-top-4 md:bottom-auto md:size-[780px] md:opacity-[0.07] lg:-right-20"
           aria-hidden="true"
-        />
-        <div
-          className="pointer-events-none absolute right-[180px] -bottom-[120px] size-[340px] rounded-full bg-[rgba(255,122,24,0.12)]"
-          aria-hidden="true"
-        />
+        >
+          <Image
+            src="/odd-robin.svg"
+            alt=""
+            fill
+            sizes="(min-width: 768px) 780px, 440px"
+            className="object-contain"
+          />
+        </div>
         <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col gap-7">
           <div className="h-1 w-12 shrink-0 bg-accent" aria-hidden="true" />
           <p className="font-mono text-xs font-semibold uppercase tracking-[0.14em] text-primary">

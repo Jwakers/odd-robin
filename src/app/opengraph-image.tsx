@@ -1,4 +1,6 @@
 import { ImageResponse } from "next/og";
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
 
 export const alt =
   "Odd Robin - local digital support for Gloucester small businesses";
@@ -8,7 +10,12 @@ export const size = {
 };
 export const contentType = "image/png";
 
-export default function Image() {
+export default async function Image() {
+  const [robinIcon, wordmarkFont, bodyFont] = await Promise.all([
+    readFile(join(process.cwd(), "public/icons/odd-robin.png")),
+    readFile(join(process.cwd(), "src/assets/fonts/geist-mono-semibold.ttf")),
+    readFile(join(process.cwd(), "node_modules/next/dist/compiled/@vercel/og/Geist-Regular.ttf")),
+  ]);
   return new ImageResponse(
     (
       <div
@@ -18,7 +25,7 @@ export default function Image() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
-          background: "#f4f7ff",
+          background: "#f3f5f8",
           backgroundImage:
             "linear-gradient(to right, rgba(95, 104, 135, 0.08) 1px, transparent 1px), linear-gradient(to bottom, rgba(95, 104, 135, 0.08) 1px, transparent 1px)",
           backgroundSize: "48px 48px",
@@ -38,21 +45,8 @@ export default function Image() {
             letterSpacing: "-0.02em",
           }}
         >
-          <div
-            style={{
-              width: 36,
-              height: 36,
-              border: "3px solid #0b4edb",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              fontSize: 20,
-              fontWeight: 800,
-            }}
-          >
-            {"</>"}
-          </div>
-          Odd Robin
+          <img src={`data:image/png;base64,${robinIcon.toString("base64")}`} width={56} height={56} alt="" />
+          <span style={{ fontFamily: "Geist Mono", fontWeight: 600 }}>Odd Robin</span>
         </div>
 
         <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
@@ -119,6 +113,7 @@ export default function Image() {
     ),
     {
       ...size,
+      fonts: [{ name: "sans-serif", data: bodyFont, weight: 400, style: "normal" }, { name: "Geist Mono", data: wordmarkFont, weight: 600, style: "normal" }],
     },
   );
 }

@@ -1,4 +1,5 @@
 import { SiteHeader } from "@/components/site-header";
+import { SiteFooter } from "@/components/site-footer";
 import type { Metadata } from "next";
 import { Geist_Mono, Manrope } from "next/font/google";
 import "./globals.css";
@@ -65,12 +66,10 @@ export default function RootLayout({
       className={`${bodyFont.variable} ${geistMono.variable} antialiased`}
     >
       <body className="min-h-screen flex flex-col">
+        <a href="#main-content" className="sr-only fixed left-4 top-4 z-[100] bg-primary px-5 py-3 font-semibold text-surface focus:not-sr-only">Skip to content</a>
         <SiteHeader />
-        {children}
-        <footer className="border-t border-outline-variant py-8 text-center text-xs font-mono text-outline uppercase tracking-widest bg-background">
-          &copy; {new Date().getFullYear()} Odd Robin · Bold digital
-          support for Gloucester small businesses.
-        </footer>
+        <div id="main-content" tabIndex={-1} className="flex flex-1 flex-col">{children}</div>
+        <SiteFooter year={new Date().getFullYear()} />
       </body>
     </html>
   );

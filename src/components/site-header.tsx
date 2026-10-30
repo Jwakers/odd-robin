@@ -1,24 +1,28 @@
 "use client";
 
-import { ArrowRight, Code2, Menu, X } from "lucide-react";
+import { ArrowRight, Menu, X } from "lucide-react";
+import { RobinMark } from "@/components/robin-mark";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 type SiteHeaderProps = {
-  currentPage?: "home" | "who" | "services" | "projects" | "contact";
+  currentPage?: "home" | "who" | "services" | "projects" | "contact" | "agencies";
 };
 
 const links = [
   { href: "/who-am-i", label: "Who am I?", page: "who" },
   { href: "/services", label: "Services", page: "services" },
   { href: "/projects", label: "Projects", page: "projects" },
+  { href: "/for-agencies", label: "For agencies", page: "agencies" },
 ] as const;
 
 export function SiteHeader({ currentPage = "home" }: SiteHeaderProps) {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
-  const resolvedCurrentPage = pathname.startsWith("/projects")
+  const isAgency = pathname === "/for-agencies";
+  const contactHref = isAgency ? "/for-agencies#project-enquiry" : "/contact";
+  const resolvedCurrentPage = isAgency ? "agencies" : pathname.startsWith("/projects")
     ? "projects"
     : pathname === "/services"
       ? "services"
@@ -42,15 +46,15 @@ export function SiteHeader({ currentPage = "home" }: SiteHeaderProps) {
     >
       <nav
         aria-label="Main navigation"
-        className="flex items-center justify-between gap-4 px-6 py-4"
+        className={`mx-auto flex items-center justify-between gap-4 px-6 ${isAgency ? "max-w-[1440px] py-5 md:px-16 md:py-6" : "py-4"}`}
       >
         <Link
           href="/"
           onClick={() => setMenuOpen(false)}
-          className="flex shrink-0 items-center gap-2"
+          className="flex shrink-0 items-center gap-2.5"
         >
-          <Code2 className="size-5 text-primary" aria-hidden="true" />
-          <span className="text-base font-semibold tracking-tight sm:text-lg">
+          <RobinMark />
+          <span className="font-mono text-base font-semibold tracking-tight sm:text-lg">
             Odd Robin
           </span>
         </Link>
@@ -68,13 +72,13 @@ export function SiteHeader({ currentPage = "home" }: SiteHeaderProps) {
             </Link>
           ))}
           <Link
-            href="/contact"
+            href={contactHref}
             aria-current={
               resolvedCurrentPage === "contact" ? "page" : undefined
             }
             className="inline-flex items-center rounded-sm bg-primary px-4 py-2 text-sm font-semibold text-surface transition-colors hover:bg-primary-fixed"
           >
-            Book a chat <ArrowRight className="w-4 h-4 ml-1" />
+            {isAgency ? "Let’s chat" : "Book a chat"} <ArrowRight className="w-4 h-4 ml-1" aria-hidden="true" />
           </Link>
         </div>
         <button
@@ -112,11 +116,11 @@ export function SiteHeader({ currentPage = "home" }: SiteHeaderProps) {
             </Link>
           ))}
           <Link
-            href="/contact"
+            href={contactHref}
             onClick={() => setMenuOpen(false)}
             className="py-3 font-semibold text-primary"
           >
-            Book a chat{" "}
+            {isAgency ? "Let’s chat" : "Book a chat"}{" "}
             <ArrowRight className="ml-1 inline size-4" aria-hidden="true" />
           </Link>
         </nav>
